@@ -1,17 +1,17 @@
 @font-face {
-    font-family: 'Kanit';
-    src: url('./kanit/Kanit-Regular.ttf');
+    font-family: "Kanit";
+    src: url("./Kanit/Kanit-Regular.ttf")
 }
 
 body {
-    font-family: 'Kanit';
+    font-family: "Kanit";
 }
 .container {
     width: 100%;
     max-width: 640px;
     margin-left: auto;
     margin-right: auto;
-    background-color: cornflowerblue;
+    background: linear-gradient(to right, violet, cyan);
     padding: 20px;
     box-sizing: border-box;
 }
@@ -21,32 +21,49 @@ body {
     margin-bottom: 20px;
 }
 .header-form {
-    width: 140px;
+    width: 110px;
 }
 .flex {
     display: flex;
 }
-.form-input{
+.form-input {
     margin-bottom: 10px;
 }
-input.form, textarea {
+input.form, textarea{
     border: 1px solid #ccc;
     width: 100%;
 }
-.center{
+.center {
     text-align: center;
 }
-.button{
-    border: 0;
-    width: 100%;
+.button {
+    border: 1px;
+    width: 50%;
     height: 40px;
 }
+.message {
+    margin-buttom: 20px;
+    padding: 10px;
+    background-color:lightgreen;
+    display: none;
+}
+.message.success {
+    background-color: lightgreen;
+    display: block;
+}
+.message.danger {
+    background-color: red;
+    display: block;
+}
 
-@media screen and (max-width: 768px) {
-    .flex {
-        flex-direction:column;
-    }
-    .header{
-        font-size: 24px;
-    }
+@media (max-width: 768px) {
+.flex {
+    flex-direction: column;
+}
+.header {
+    font-size: 24px;
+}
+.button {
+    width: 100%;
+}
 }
