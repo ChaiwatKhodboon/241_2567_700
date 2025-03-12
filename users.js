@@ -6,13 +6,13 @@ window.onload = async() => {
 }
 
 const loadData = async() => {
-console.log('user page loaded')
+console.log('users page loaded')
     //1. load user ทั้งหมด จาก api ที่เตรียมไว้
     const response = await axios.get(`${BASE_URL}/users`)
 
     console.log(response.data)
 
-    const userDOM = document.getElementById('user')
+    const userDOM = document.getElementById('users')
     //2. นำ user ทั้งหมด โหลดกลับเข้าไปใน html
 
     let htmlData = '<div>'
