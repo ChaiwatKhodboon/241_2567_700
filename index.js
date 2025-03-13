@@ -107,6 +107,9 @@ const submitData = async () => {
       console.log('response', response.data);
     }
 
+    setTimeout(() => {
+      window.location.href = 'users.html'
+    }, 1000)
     messageDOM.innerText = message
     messageDOM.className = 'message success'
 
