@@ -3,108 +3,128 @@
     src: url("./Kanit/Kanit-Regular.ttf");
 }
 
-body {
+body {//เปลี่ยนสีพื้นหลังหน้าเว็บ
     font-family: "Kanit";
-    background-color: #f8f4e1; /* สีขาวครีม */
-    color: #856404; /* สีน้ำตาลทอง */
+    background: url("1.png");
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
 }
 
 .container {
+    font-family: "Kanit";
     width: 100%;
-    max-width: 640px;
-    margin-left: auto;
-    margin-right: auto;
-    background: linear-gradient(to right, #fffaf0, #f7e6c4); /* ไล่สีขาวทอง */
-    padding: 20px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงา */
-    border-radius: 10px; /* ขอบมน */
-    box-sizing: border-box;
+    max-width: 600px;
+    background:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url("w3.jpg");
+    background-size: cover;
+    padding:50px;
+    border-radius: 12px;
+    border-box: border-box;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid #A7C7E7;
+    color:white;
 }
 
 .header {
-    font-size: 30px;
+    font-size: 28px;
     text-align: center;
     margin-bottom: 20px;
-    color: #b38b00; /* สีทองเข้ม */
     font-weight: bold;
+    color:rgb(255, 255, 255);
 }
-
 .header-form {
     width: 110px;
 }
-
 .flex {
-    display: flex;
+display: flex;
 }
-
 .form-input {
     margin-bottom: 10px;
 }
 
-input.form,
-textarea {
-    border: 1px solid #ccc;
-    width: 100%;
-    padding: 8px;
-    border-radius: 5px;
-    background-color: #fff;
-    box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.1); /* เพิ่มเงาเบาๆ */
-    transition: box-shadow 0.3s ease-in-out;
-}
-
-input.form:focus,
-textarea:focus {
-    outline: none;
-    box-shadow: 3px 3px 12px rgba(0, 0, 0, 0.2); /* เพิ่มเงาเข้มขึ้นเมื่อโฟกัส */
-}
-
 .center {
-    text-align: center;
+text-align: center;
+}
+input.form, textarea {//เงาหลังกรอบข้อความ
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #A7C7E7;
+    border-radius: 6px;
+    font-size: 16px;
+    background:rgba(229, 192, 213, 0.85) ;
+    transition: 0.3s;
 }
 
-.button {
-    border: none;
-    width: 50%;
-    height: 40px;
-    background-color: #d4af37; /* สีทอง */
-    color: white;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s;
+
+input.form, textarea {//คำอธิบาย
+    border-color:rgb(214, 44, 177);
+    outline: none;
+    box-shadow: 0px 0px 5px rgba(211, 104, 166, 0.85);
+    border: 1px solid #ccc;
+    width:97%;
+
 }
+input.form:hover, textarea:hover{
+    background:rgb(253, 236, 247);
+    cursor: pointer;
+
+}
+
+
+.button {//ส่งข้อความ
+    padding: 12px;
+    background:rgb(84, 191, 218);
+    border: 1px;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+    width: 40%;
+    height: 50px;
+   
+}
+.button{
+    font-family: "Kanit";
+}
+
+
 
 .button:hover {
-    background-color: #b38b00; /* สีทองเข้มขึ้นเมื่อ hover */
+    background:rgb(18, 221, 167);
 }
 
 .message {
-    margin-bottom: 20px;
-    padding: 10px;
+    margin-buttom: 20px;
     display: none;
-    border-radius: 5px;
+    padding: 10px;
+    border-radius: 6px;
 }
 
 .message.success {
-    background-color: #d4edda;
-    color: #155724;
     display: block;
+    background-color: lightgreen;
 }
 
 .message.danger {
-    background-color: #f8d7da;
-    color: #721c24;
     display: block;
+    background-color: red;
+    color: white;
 }
 
 @media (max-width: 768px) {
-    .flex {
-        flex-direction: column;
+    .
+    .container {
+        padding: 15px;
     }
     .header {
         font-size: 24px;
     }
     .button {
-        width: 100%;
+        font-size: 16px;
     }
 }
