@@ -5,7 +5,7 @@
 
 body {//เปลี่ยนสีพื้นหลังหน้าเว็บ
     font-family: "Kanit";
-    background: url("1.png");
+    background: url("https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExNzlqb3NmcWJyeWUyc2tvNHlvb2wwc2FsbG0zOWh6a3RwZzk2Y2owZiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/Kfg7Pp7IVakO17Z4dO/giphy.gif");
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -97,7 +97,9 @@ input.form:hover, textarea:hover{
 .button:hover {
     background:rgb(18, 221, 167);
 }
-
+.center .button {
+    margin-top: 20px; /* เพิ่มระยะห่าง 20px ระหว่างปุ่ม */
+}
 .message {
     margin-buttom: 20px;
     display: none;

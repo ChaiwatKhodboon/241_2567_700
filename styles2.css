@@ -69,23 +69,23 @@ button {
 }
 
 /* ===== ปุ่ม Edit ===== */
-a button {
+.Edit {
     background: linear-gradient(135deg, #28a745, #218838); /* เขียว */
     color: white;
 }
 
-a button:hover {
+.Edit:hover {
     background: linear-gradient(135deg, #218838, #28a745);
     transform: scale(1.1);
 }
 
 /* ===== ปุ่ม Delete ===== */
-button.delete {
+.delete {
     background: linear-gradient(135deg, #dc3545, #c82333); /* แดง */
     color: white;
 }
 
-button.delete:hover {
+.delete:hover {
     background: linear-gradient(135deg, #c82333, #dc3545);
     transform: scale(1.1);
 }
